@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class SQRServiceTest {
+//public class SQRServiceTest {
 
 //    @Test
 //    public void SqrMathTest1() {
@@ -20,9 +20,9 @@ public class SQRServiceTest {
 //
 //        Assertions.assertEquals(expected, actual);
 //    }
-
+public class SQRServiceTest {
     @ParameterizedTest
-    @CsvFileSource(resources={"/testSqr.csv"})
+    @CsvFileSource(resources = {"/testSqr.csv"})
     public void SqrMathTest2(int limit1, int limit2, int expected) {
         SQRService service = new SQRService();
 
@@ -31,5 +31,5 @@ public class SQRServiceTest {
 
         assertNotEquals(expected, actual);
     }
-
 }
+
